@@ -1,0 +1,149 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #efe9ce;
+}
+
+.banner {
+    width: 100%;
+    height: 100vh;
+    background-image: url(defaultbg.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.navbar {
+    width: 85%;
+    margin: auto;
+    padding: 35px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navbar ul li {
+    list-style: none;
+    display: inline-block;
+    margin: 0 10px; 
+    position: relative;
+}
+
+.navbar ul li a {
+    text-decoration: none;
+    color: #a23c3c;
+    font-size: 17px;
+    text-transform: uppercase;
+    font-style: italic;
+    font-family: cursive;
+}
+
+.navbar ul li::after {
+    content: '';
+    height: 3px;
+    width: 0;
+    background: #ab2f2f;
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    transition: 0.5s;
+}
+
+.navbar ul li:hover::after {
+    width: 100%;
+}
+
+.heading {
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    margin: 20px auto;
+}
+
+.heading h1 {
+    font-size: 40px;
+    color: #ab2f2f;
+    margin-bottom: 10px;
+    position: relative;
+}
+
+.heading p {
+    font-size: 20px;
+    color: #ab2f2f;
+    margin-bottom: 35px;
+}
+
+.container {
+    width: 90%;
+    margin: 0 auto;
+    padding: 10px 20px;
+}
+
+.about {
+    display: block; /* Changed to block to stack sections */
+    margin: 0 auto; /* Center the content */
+    width: 90%; /* Optional: Ensure the width is consistent */
+}
+
+.brands, .howtouse, .toavoid, .allergies {
+    margin-bottom: 20px; /* Add spacing between the two sections */
+    flex: none; /* Prevent flex-grow */
+}
+
+.brands {
+    flex: 1; /* Retain the flex property to maintain structure */
+}
+
+.brands h2 {
+    font-size: 23px;
+    margin-bottom: 15px;
+    color: #730b0b;
+}
+
+.brands p {
+    font-size: 18px;
+    line-height: 1.5;wr 
+    color: #730b0b;
+}
+
+.howtouse h2 {
+    font-size: 23px;
+    margin-bottom: 15px;
+    color: #730b0b;
+}
+
+.howtouse p {
+    font-size: 18px;
+    line-height: 1.5;
+    color: #730b0b;
+}
+
+.toavoid h2 {
+    font-size: 23px;
+    margin-bottom: 15px;
+    color: #730b0b;
+}
+
+.toavoid p {
+    font-size: 18px;
+    line-height: 1.5;
+    color: #730b0b;
+}
+
+.allergies h2 {
+    font-size: 23px;
+    margin-bottom: 15px;
+    color: #730b0b;
+}
+
+.allergies p {
+    font-size: 18px;
+    line-height: 1.5;
+    color: #730b0b;
+}

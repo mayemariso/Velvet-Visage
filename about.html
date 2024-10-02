@@ -1,0 +1,81 @@
+<html>
+	<head>
+		<title> The Velvet Visage </title>
+		<link rel = "stylesheet" href = "magic.css">
+	</head>
+	
+	<body>
+		<div class = "main">
+			<div class = "navbar">
+					<ul>
+						<li><a href = "index.html">Home</a></li>
+						<li><a href = "about.html">About Us</a></li>
+					</ul>
+			</div>
+			
+			<div class = "information">
+			<div class = "overlay"> </div>
+				<img src = "clearbut.png" class = "logoclear">
+				<div id="circle">
+				
+				 <div class="feature lipstick">
+     
+            <img src="images/sumbillo.png" alt="lipstick">
+        
+    </div>
+    
+    <div class="feature foundation">
+      
+            <img src="images/labayno.png" alt="foundation">
+        
+    </div>
+    
+    <div class="feature mascara">
+     
+            <img src="images/barnedo.png" alt="mascara">
+   
+    </div>
+    
+    <div class="feature blushon">
+       
+            <img src="images/sestoso.png" alt="Blush On">
+       
+    </div>
+</div>
+				</div>
+				
+						
+			</div>
+			
+			<div class = "controls">
+				<img src = "arrow.png" id = "upBtn">
+				<h3> FEATURES </h3>
+				<img src = "arrow.png" id = "downBtn">
+			</div>
+			
+		</div>
+		
+		<script>
+			var circle = document.getElementById("circle");
+			var upBtn = document.getElementById("upBtn");
+			var downBtn = document.getElementById("downBtn");
+			
+			var rotateValue = circle.style.transform;
+			var rotateSum;
+			
+			upBtn.onclick = function()
+			{
+				rotateSum = rotateValue + "rotate(-90deg)";
+				circle.style.transform = rotateSum;
+				rotateValue = rotateSum;
+			}
+			
+			downBtn.onclick = function()
+			{
+				rotateSum = rotateValue + "rotate(90deg)";
+				circle.style.transform = rotateSum;
+				rotateValue = rotateSum;
+			}
+		</script>
+	</body>
+</html>

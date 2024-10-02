@@ -1,0 +1,120 @@
+* {
+	margin: 0;
+	padding: 0;
+	
+}
+
+.banner {
+	width: 100%;
+	height: 100vh;
+	background-image: linear-gradient(rgba(0,0,0,0), rgba(0,0,0,0.25)), url(movingbutterfly.gif);
+	background-size: cover;
+	background-position: center;
+}
+
+.navbar {
+	width: 85%;
+	margin: auto;
+	padding: 35px 0;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.navbar ul li {
+	list-style: none;
+	display: inline-block;
+	margin: 0 10px; 
+	position: relative;
+}
+
+.navbar ul li a {
+	text-decoration: none;
+	color: #a23c3c;
+	font-size: 17px;
+	text-transform: uppercase;
+	font-style: italic;
+	font-family: cursive;
+}
+
+.navbar ul li::after {
+	content: '';
+	height: 3px;
+	width: 0;
+	background: #ab2f2f;
+	position: absolute;
+	left: 0;
+	bottom: -5px;
+	transition: 0.5s;
+}
+
+.navbar ul li:hover::after {
+	width: 100%;
+}
+
+.content{
+	width: 100%;
+	position: absolute;
+	top: 87%;
+	transform: translateY(-50%);
+	text-align: center;
+	color: #ffffff;
+	font-family: serif;
+	font-style: italic;
+	font-size: 18px;
+}
+
+.content p{
+	font-size: 21px;
+}
+
+.click {
+	width: 100%;
+	position: absolute;
+	top: 75%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	text-align: center;
+	color: #efe9ce;
+	
+}
+
+button {
+	display: inline-block;
+	width: 200px;
+	padding: 15px 0;
+	text-align: center;
+	margin: 20px auto;
+	border-radius: 25px;
+	font-weight: bold;
+	border: 3px solid #fff;
+	background: transparent;
+	color: #fff;
+	cursor: pointer;
+	font-family: serif;
+	font-style: italic;
+	font-size: 18px;
+	position: relative;
+	overflow: hidden;
+}
+
+span {
+	background: #a23c3c;
+	height: 0%;
+	width: 100%;
+	border-radius: 25px;
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	z-index: -1;
+	transition: height 0.5s ease;
+}
+
+button:hover span {
+	height: 100%; 
+}
+
+button:hover {
+	color: #fff;
+	border: none; 
+}
